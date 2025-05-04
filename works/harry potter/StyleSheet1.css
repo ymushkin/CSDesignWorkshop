@@ -1,0 +1,51 @@
+﻿body {
+    background-image: url('image/hogwarts.jpg');
+    font-family: 'HarryP', serif;
+}
+@font-face {
+    font-family: 'HarryP';
+    src: url('fonts/HarryP-MVZ6w.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.roof-button {
+    top: 22%;
+    left: 44%;
+    width: 80px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* מיקום כפתור על הבניין השמאלי הגבוה */
+.left-building-button {
+    top: 75%;
+    left: 25%;
+    width: 80px;
+    height: 40px;
+}
+
+/* מיקום כפתור על השער (למטה בכניסה) */
+.gate-button {
+    top: 89%;
+    left: 66%;
+    width: 80px;
+    height: 40px;
+}
+button {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 2px solid #555;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s ease;
+    font-size:20px;
+    font-family:HarryP;
+}
+    button:hover {
+        transform: scale(1.1);
+    }

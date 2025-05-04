@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תמונה כרקע</title>
+    <style>
+        body {
+            background-image: url("../img/21750-900x900.jpg"); /* נתיב התמונה */
+            background-size: cover; /* התמדה במילוי כל המסך */
+            background-position: center center; /* מיקום התמונה במרכז */
+            background-attachment: fixed; /* תמונה קבועה בזמן גלילה */
+            margin: 0;
+            height: 100vh; /* לוודא שהתמונה תכסה את כל הגובה */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: hotpink;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .image-container img {
+                width: 100px; /* גודל התמונות */
+                height: 100px; /* גודל התמונות */
+                margin: 0 10px; /* רווחים בין התמונות */
+            }
+    </style>
+</head>
+<body>
+
+    <h1>המאפייה של פיגי</h1>
+
+    <div class="image-container">
+        <img src="../img/81f6EZJ.jpg" />
+        <img src="../img/b4494d5cf310697e5c1705e92a4bbba2.jpg" />
+        <img src="../img/images (1).jpg" />
+    </div>
+
+</body>
+</html>
+

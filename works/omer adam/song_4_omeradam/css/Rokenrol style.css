@@ -1,0 +1,33 @@
+﻿#ptiha
+{
+	font-size: 30px;
+
+}
+
+#shir 
+{
+	font-size: 14px;	
+}
+
+#ptiha2
+{
+	font-size: 20px;
+}
+.class1
+{
+	color: black;
+	margin: 20px;
+}
+.class2
+{
+	color: grey;
+	margin: 20px;
+}
+.class3 {
+	color: aquamarine;
+	margin: 20px;
+}
+body
+{
+	text-align: center;
+}

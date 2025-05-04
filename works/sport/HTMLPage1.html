@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F - קנה את כל ציוד הספורט שלך</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Heebo', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background-color: #064a7d;
+            /*background-color: #a2e524;*/
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+            .header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2d2d2d;
+            padding: 10px 20px;
+        }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: block;
+                font-size: 1.1em;
+                transition: background-color 0.3s;
+            }
+
+                .navbar a:hover {
+                    background-color: #0042a3;
+                }
+
+        .search-bar input {
+            padding: 10px;
+            font-size: 1.1em;
+            border-radius: 20px;
+            border: none;
+            width: 300px;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+            .product-card img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+            .product-card h2 {
+                font-size: 1.4em;
+                color: #333;
+                margin: 15px 0;
+            }
+
+            .product-card p {
+                font-size: 1.1em;
+                color: #666;
+            }
+
+            .product-card button {
+                background-color: #064a7d;
+                /*background-color: #a2e524;*/
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1em;
+                transition: background-color 0.3s;
+            }
+
+                .product-card button:hover {
+                    background-color: #0042a3;
+                }
+
+        .footer {
+            background-color: #064a7d;
+            /*background-color: #a2e524;*/
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+            .footer p {
+                margin: 0;
+            }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin: 40px 0;
+            flex-direction: row;
+            align-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+            .category:hover {
+                transform: scale(1.05);
+            }
+
+            .category img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+            .category h3 {
+                font-size: 1.3em;
+                color: #333;
+                margin-top: 10px;
+            }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="header">
+        <h1>Full<span style ="color: #2c8fdb">Sport</span></h1>
+
+    </nav>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <h2 style="color:white; margin: 0;">לוגו</h2>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="חפש מוצרים..." />
+        </div>
+        <div class="menu">
+            <a href="#">בית</a>
+            <a href="#">מוצרים</a>
+            <a href="#">הנחות</a>
+            <a href="#">התקשרו אלינו</a>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+        <div class="category">
+            <img src="https://via.placeholder.com/200" alt="קטגוריה ספורט 1" />
+            <h3>ספורט יבשתי</h3>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/200" alt="קטגוריה ספורט 2" />
+            <h3>ריצה</h3>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/200" alt="קטגוריה ספורט 3" />
+            <h3>אופניים</h3>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/200" alt="קטגוריה ספורט 4" />
+            <h3>כושר</h3>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/200" alt="קטגוריה ספורט 1" />
+            <h3>שחייה</h3>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/200" alt="קטגוריה ספורט 2" />
+            <h3>כדורגל</h3>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/200" alt="קטגוריה ספורט 3" />
+            <h3>טניס</h3>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/200" alt="קטגוריה ספורט 4" />
+            <h3>כדורסל</h3>
+        </div>
+    </div>
+
+    <!-- Main Products Section -->
+    <div class="main-content">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/280x180" alt="מוצר 1" />
+            <h2>נעלי ריצה מקצועיות</h2>
+            <p>נעליים קלות ונוחות, אידאליות לריצה מרחקים ארוכים.</p>
+            <button>קנה עכשיו</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/280x180" alt="מוצר 2" />
+            <h2>חולצת ריצה מאווררת</h2>
+            <p>חולצה מתייבשת מהר ונשארת נוחה לאורך כל הריצה.</p>
+            <button>קנה עכשיו</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/280x180" alt="מוצר 3" />
+            <h2>אופני הרים מקצועיים</h2>
+            <p>אופניים עמידות ומעולות לטיולים בדרכים לא סלולות.</p>
+            <button>קנה עכשיו</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/280x180" alt="מוצר 4" />
+            <h2>משקפי שמש לספורט</h2>
+            <p>המשקפיים המושלמים לשמירה על עיניים מפני השמש במהלך הפעילות.</p>
+            <button>קנה עכשיו</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 FullSport - כל הזכויות שמורות</p>
+    </div>
+</body>
+</html>
